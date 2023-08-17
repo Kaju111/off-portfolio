@@ -1,0 +1,95 @@
+.about{
+    &__content{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+
+
+        &__personalWrapper{ h3{
+            width: 80%;
+            margin-bottom: 10px;
+            font-size: 5.5rem;
+            font-weight: 700;
+            color: var(--yellow-theme-main-color);
+        }
+        h3.personalInfromationHeaderText{
+            padding-top: 20px;
+        }
+
+        p{
+            color: #ffff;
+            font-size: 2.8rem;
+            line-height: 1.65;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--yellow-theme-main-color);
+           
+        }
+
+        ul > li{
+            line-height: 1rem;
+            margin-bottom: 15px;
+
+            span.title, span.value{
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+                border-bottom: 2px solid var(--yellow-theme-main-color);
+                position: relative;
+                display: inline-block;
+                margin-right: 16px;
+                padding-bottom: 7px;
+                color: #ffff;
+                
+                 }
+                 span.value{
+                    border: none;
+                 }
+        }
+    }
+    &__servicesWrapper{
+
+        &__innerContent{
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(180px, var(--yellow-theme-main-color), transparent 90%);
+            border-radius: 50%;
+            margin-top: 300px;
+            border: 1.5px solid var(--yellow-theme-main-color);
+            
+
+            div:nth-child(1){
+                position: absolute;
+                margin-left: 135px;
+            }
+            div:nth-child(2){
+                position: absolute;
+                margin-top: 285px;
+                margin-left: 135px;
+            }
+            div:nth-child(3){
+                position: absolute;
+                margin-top: 155px;
+                margin-left: 5px;
+            }
+            div:nth-child(4){
+                position: absolute;
+               margin-top: 150px;
+               margin-left: 290px;
+            }
+        }
+    }
+    }
+    @media only screen and  (max-width: 768){
+        .about__content{
+            flex-direction: column;
+            
+            &__personalWrapper, &__servicesWrapper{
+                width: 100%;
+            }
+        
+        }
+
+    }
+    
+}
